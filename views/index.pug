@@ -1,5 +1,16 @@
-extends layout
+extends layout 
 
 block content
-  h1= title
-  p Welcome to #{title}
+    include partials/header.pug
+    //- Including Banner Page 
+    include banner.pug
+    //- Including About Page 
+    include about.pug
+    //- Including Projects Page 
+    include projects.pug
+    //- Including Service Page 
+    include services.pug
+    //- Including Contact Me Page 
+    include contact.pug
+
+    include partials/footer.pug

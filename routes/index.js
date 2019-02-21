@@ -26,12 +26,12 @@ router.get('/projects', function(req, res, next) {
 
 /* GET Services page. */
 router.get('/services', function(req, res, next) {
-  res.send('Services Page');
+  res.render('services');
 });
 
 /* GET Contact Me page. */
-router.get('/contactme', function(req, res, next) {
-  res.send('Contact Me Page');
+router.get('/contact', function(req, res, next) {
+  res.render('contact');
 });
 
 module.exports = router;
