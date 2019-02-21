@@ -1,3 +1,10 @@
+/*
+File name: Index.js 
+Author's: Simranjit 
+Web site name: https://rocky-waters-41514.herokuapp.com/
+File description: Consists of all the routes for the portfolio assignment.
+*/
+
 var express = require('express');
 var router = express.Router();
 
@@ -16,22 +23,27 @@ router.get('/banner', function(req, res, next) {
 
 /* GET About Me page. */
 router.get('/about', function(req, res, next) {
-  res.render('about');
+  // console.log(req.route.path)
+  if(req.route.path === '/about')
+  res.render('about', { header: 1});
 });
 
 /* GET Projects page. */
 router.get('/projects', function(req, res, next) {
-  res.render('projects');
+  if(req.route.path === '/projects')
+  res.render('projects', { header: 1 });
 });
 
 /* GET Services page. */
 router.get('/services', function(req, res, next) {
-  res.render('services');
+  if(req.route.path === '/services')
+  res.render('services', { header: 1 });
 });
 
 /* GET Contact Me page. */
 router.get('/contact', function(req, res, next) {
-  res.render('contact');
+  if(req.route.path === '/contact')  
+  res.render('contact', {header: 1});
 });
 
 module.exports = router;

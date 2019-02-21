@@ -1,6 +1,15 @@
+//-
+//- File name: Index.js 
+//- Author's: Simranjit 
+//- Web site name: https://rocky-waters-41514.herokuapp.com/banner
+//- File description:  Banner section to be used for Pages and as a component
+//-
+
 extend layout
 
 block content
+    if header == 1
+        include partials/header.pug
     section.home-banner-area
         div.container
             div.row.fullscreen.d-flex.align-items-center
@@ -13,7 +22,8 @@ block content
                         p #{designation}
                         span.developer.mb-50.wow.fadeInUp Designer and Content Developer
                         br
-                        a(href="#", data-text="Contact Me").primary-btn
+                        br
+                        a(href="#contact", data-text="Contact Me").primary-btn
                             span C
                             span o
                             span n
@@ -25,4 +35,4 @@ block content
                             span M
                             span e
                 div.banner-img.col-lg-6.col-md-6.align-self-end
-                    img(src="#" alt="").img-fluid
+                    img(src="img/logo.png" alt="").img-fluid
