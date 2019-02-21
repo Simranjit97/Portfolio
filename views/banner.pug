@@ -1,0 +1,28 @@
+extend layout
+
+block content
+    section.home-banner-area
+        div.container
+            div.row.fullscreen.d-flex.align-items-center
+                div.banner-content.col-lg-6.col-md-12.justify-content-center
+                    br
+                    div(data-wow-duration="1s" data-wow-delay="1.2s" style="visibility: visible; animation-duration: 1s; animation-delay: 1.2s; animation-name: fadeInDown;").me.wow.fadeInDown
+                        span It's Me
+                    h1(data-wow-duration="1s" data-wow-delay="1.7s" style="visibility: visible; animation-duration: 1s; animation-delay: 1.7s; animation-name: fadeInUp;").wow.fadeInUp #{title}
+                    div(data-wow-duration="1s" data-wow-delay="2.1s" style="visibility: visible; animation-duration: 1s; animation-delay: 2.1s; animation-name: fadeInUp;").designation.mb-50.wow.fadeInUp
+                        p #{designation}
+                        span.developer.mb-50.wow.fadeInUp Designer and Content Developer
+                        br
+                        a(href="#", data-text="Contact Me").primary-btn
+                            span C
+                            span o
+                            span n
+                            span t
+                            span a
+                            span c
+                            span t
+                            span 
+                            span M
+                            span e
+                div.banner-img.col-lg-6.col-md-6.align-self-end
+                    img(src="#" alt="").img-fluid
