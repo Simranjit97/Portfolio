@@ -1,15 +1,15 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* GET Home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Portfolio' });
+  res.render('index', { title: 'Simranjit Kaur', designation: 'Creative Head' });
 });
 
-/* GET test page. */
+/* GET Banner page. */
 router.get('/banner', function(req, res, next) {
   res.render('banner', 
-    { title: 'Sourabh Dudakiya', 
+    { title: 'Simranjit Kaur', 
       designation: 'Creative Head'
   } );
 });
